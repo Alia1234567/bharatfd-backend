@@ -24,9 +24,19 @@ The objective of this test is to evaluate the candidate’s ability to:
 ### **2. WYSIWYG Editor Integration**
 - Use **django-ckeditor** to allow users to format answers properly.
 - Ensure that the WYSIWYG editor supports **multilingual content**.
+- //used Google Translator module in python
+
+POST
+/apiapi/getanswer body {}
 
 ### **3. API Development**
 - Create a ** REST API** for managing FAQs.
+- GET only require PATH
+- POST requires PATH + Body
+- PUT Requires PATH + Body + ID
+- DELETE reuire only PATH ID
+
+
 - Support **language selection** via `?lang=` query parameter.
 - Ensure responses are **fast and efficient** using pre-translation.
 
@@ -42,6 +52,7 @@ The objective of this test is to evaluate the candidate’s ability to:
 ### **6.  Admin Panel**
 - Register the **FAQ model** in the  Admin site or create one seperately.
 - Enable a **user-friendly admin interface** for managing FAQs.
+// Don't know if it should allow access of all CRUD so I don't know what type of security we are looking for because we can't allow CRUD to everyone in the public API 
 
 ### **7. Unit Tests & Code Quality**
 - Write **unit tests** using `pytest` or `mocha`/`chai`.
@@ -51,6 +62,14 @@ The objective of this test is to evaluate the candidate’s ability to:
 ### **8. Documentation**
 - Write a **detailed README** with:
   - Installation steps
+  pip install -r requirements.txt
+  pip install Django==4.1
+  pip install djangorestframework==3.14
+  pip install django-redis==5.2
+  pip install googletrans
+  pip install django-ckeditor
+
+
   - API usage examples
   - Contribution guidelines
 - Ensure the **README is well-structured and easy to follow**.
