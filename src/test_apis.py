@@ -1,5 +1,5 @@
 from rest_framework.test import APITestCase
-from backend.models import User
+from src.user.models import User
 from rest_framework import status
 
 class UserApiTestCase(APITestCase):

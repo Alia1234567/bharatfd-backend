@@ -1,5 +1,5 @@
 from django.test import TestCase
-from backend.models import User
+from src.user.models import User
 
 class UserModelTest(TestCase):
     def test_user_creation(self):

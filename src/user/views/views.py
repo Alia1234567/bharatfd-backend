@@ -1,6 +1,6 @@
 from rest_framework import generics
-from backend.models import User
-from backend.serializers import UserSerializer
+from src.user.models.models import User
+from src.user.serializer.serializer import UserSerializer
 
 class UserListView(generics.ListCreateAPIView):
     queryset = User.objects.all()
